@@ -291,7 +291,21 @@ _Add screenshot here_
 - API Integration
 
 ---
+## 🌐 Live Demo
 
+👉 **Live Website**
+
+https://admin-panel-dashboard-three-beta.vercel.app
+
+---
+
+## 📂 GitHub Repository
+
+👉 **Source Code**
+
+https://github.com/JaswithaG/admin-panel-dashboard
+
+---
 # 👩‍💻 Developer
 
 **Gummi Jaswitha**
