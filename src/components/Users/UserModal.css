@@ -1,0 +1,82 @@
+/* ==========================
+   USER MODAL
+========================== */
+
+.user-modal-overlay{
+position:fixed;
+inset:0;
+background:rgba(0,0,0,.5);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1000;
+padding:20px;
+}
+
+.user-modal{
+width:100%;
+max-width:600px;
+background:#ffffff;
+border-radius:16px;
+padding:25px;
+box-shadow:0 15px 35px rgba(0,0,0,.2);
+animation:modalFade .3s ease;
+max-height:90vh;
+overflow-y:auto;
+}
+
+.user-modal-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.user-modal-header h2{
+margin:0;
+color:#111827;
+}
+
+.close-btn{
+background:none;
+border:none;
+font-size:22px;
+cursor:pointer;
+color:#6b7280;
+}
+
+body.dark .user-modal{
+background:#1f2937;
+}
+
+body.dark .user-modal-header h2{
+color:white;
+}
+
+@keyframes modalFade{
+from{
+opacity:0;
+transform:translateY(-20px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+@media(max-width:768px){
+
+.user-modal{
+padding:20px;
+}
+
+}
+
+@media(max-width:480px){
+
+.user-modal{
+padding:15px;
+border-radius:12px;
+}
+
+}

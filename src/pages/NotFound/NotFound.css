@@ -1,0 +1,150 @@
+/* ==========================
+   NOT FOUND PAGE
+========================== */
+
+.notfound-page{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f4f7fc;
+padding:20px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.notfound-card{
+background:#ffffff;
+padding:50px;
+border-radius:20px;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+max-width:500px;
+width:100%;
+animation:fadeIn .5s ease;
+}
+
+.notfound-card h1{
+font-size:100px;
+color:#2563eb;
+margin:0;
+font-weight:700;
+}
+
+.notfound-card h2{
+margin:15px 0;
+font-size:32px;
+color:#111827;
+}
+
+.notfound-card p{
+font-size:16px;
+color:#6b7280;
+line-height:1.6;
+margin-bottom:30px;
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.home-btn{
+display:inline-block;
+padding:14px 26px;
+background:#2563eb;
+color:#ffffff;
+text-decoration:none;
+border-radius:10px;
+font-size:16px;
+font-weight:600;
+transition:.3s;
+}
+
+.home-btn:hover{
+background:#1d4ed8;
+transform:translateY(-2px);
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark .notfound-page{
+background:#111827;
+}
+
+body.dark .notfound-card{
+background:#1f2937;
+}
+
+body.dark .notfound-card h2{
+color:#ffffff;
+}
+
+body.dark .notfound-card p{
+color:#d1d5db;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.notfound-card{
+padding:35px 25px;
+}
+
+.notfound-card h1{
+font-size:80px;
+}
+
+.notfound-card h2{
+font-size:26px;
+}
+
+}
+
+@media(max-width:480px){
+
+.notfound-card{
+padding:25px 18px;
+}
+
+.notfound-card h1{
+font-size:65px;
+}
+
+.notfound-card h2{
+font-size:22px;
+}
+
+.notfound-card p{
+font-size:14px;
+}
+
+.home-btn{
+width:100%;
+}
+
+}

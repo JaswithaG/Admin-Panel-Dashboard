@@ -1,0 +1,143 @@
+/* ==========================
+   EMPTY STATE
+========================== */
+
+.empty-state{
+
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+padding:60px 20px;
+
+text-align:center;
+
+background:#ffffff;
+
+border-radius:16px;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+}
+
+.empty-icon{
+
+font-size:70px;
+
+color:#9ca3af;
+
+margin-bottom:20px;
+}
+
+.empty-state h2{
+
+font-size:28px;
+
+color:#111827;
+
+margin-bottom:10px;
+}
+
+.empty-state p{
+
+color:#6b7280;
+
+font-size:16px;
+
+margin-bottom:25px;
+
+max-width:450px;
+}
+
+.empty-btn{
+
+padding:12px 24px;
+
+border:none;
+
+border-radius:10px;
+
+background:#2563eb;
+
+color:white;
+
+font-size:15px;
+font-weight:600;
+
+cursor:pointer;
+
+transition:.3s;
+}
+
+.empty-btn:hover{
+
+background:#1d4ed8;
+
+transform:translateY(-2px);
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark .empty-state{
+
+background:#1f2937;
+
+}
+
+body.dark .empty-icon{
+
+color:#6b7280;
+
+}
+
+body.dark .empty-state h2{
+
+color:white;
+
+}
+
+body.dark .empty-state p{
+
+color:#d1d5db;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.empty-state{
+
+padding:40px 20px;
+
+}
+
+.empty-icon{
+
+font-size:55px;
+
+}
+
+.empty-state h2{
+
+font-size:24px;
+
+}
+
+.empty-state p{
+
+font-size:15px;
+
+}
+
+.empty-btn{
+
+width:100%;
+
+}
+
+}

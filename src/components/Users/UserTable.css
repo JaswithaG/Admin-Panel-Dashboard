@@ -1,0 +1,105 @@
+/* ==========================
+   USER TABLE
+========================== */
+
+.user-table-container{
+    width:100%;
+    overflow-x:auto;
+    background:#ffffff;
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+}
+
+.user-table{
+    width:100%;
+    min-width:900px;
+    border-collapse:collapse;
+}
+
+.user-table th{
+    background:#f3f4f6;
+    color:#374151;
+    padding:14px;
+    text-align:left;
+    font-weight:600;
+}
+
+.user-table td{
+    padding:14px;
+    border-bottom:1px solid #e5e7eb;
+    color:#374151;
+}
+
+.user-table tbody tr:hover{
+    background:#f9fafb;
+}
+
+.table-actions{
+    display:flex;
+    gap:10px;
+}
+
+.table-actions button{
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.edit-btn{
+    background:#2563eb;
+    color:#fff;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:#fff;
+}
+
+.edit-btn:hover{
+    background:#1d4ed8;
+}
+
+.delete-btn:hover{
+    background:#dc2626;
+}
+
+/* Dark Mode */
+
+body.dark .user-table-container{
+    background:#1f2937;
+}
+
+body.dark .user-table th{
+    background:#374151;
+    color:#fff;
+}
+
+body.dark .user-table td{
+    color:#fff;
+    border-color:#374151;
+}
+
+body.dark .user-table tbody tr:hover{
+    background:#374151;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.user-table-container{
+padding:15px;
+}
+
+.table-actions{
+flex-direction:column;
+}
+
+.table-actions button{
+width:100%;
+}
+
+}

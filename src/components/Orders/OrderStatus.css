@@ -1,0 +1,101 @@
+/* ===========================
+   ORDER STATUS
+=========================== */
+
+.order-status-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ===========================
+   STATUS BADGE
+=========================== */
+
+.status-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 30px;
+  font-size: 13px;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Pending */
+
+.pending {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+/* Processing */
+
+.processing {
+  background: #dbeafe;
+  color: #2563eb;
+}
+
+/* Shipped */
+
+.shipped {
+  background: #ede9fe;
+  color: #7c3aed;
+}
+
+/* Delivered */
+
+.delivered {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+/* Cancelled */
+
+.cancelled {
+  background: #fee2e2;
+  color: #dc2626;
+}
+
+/* ===========================
+   DROPDOWN
+=========================== */
+
+.status-select {
+  padding: 8px 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  outline: none;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.3s;
+  background: #fff;
+}
+
+.status-select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.2);
+}
+
+/* ===========================
+   DARK MODE
+=========================== */
+
+body.dark .status-select {
+  background: #111827;
+  color: #ffffff;
+  border-color: #374151;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media (max-width: 768px) {
+  .order-status-container {
+    min-width: 140px;
+  }
+
+  .status-select {
+    width: 100%;
+  }
+}

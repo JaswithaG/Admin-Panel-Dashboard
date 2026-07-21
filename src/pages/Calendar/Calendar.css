@@ -1,0 +1,147 @@
+/* ==========================
+   CALENDAR WIDGET
+========================== */
+
+.calendar-widget h2{
+text-align:center;
+margin-bottom:20px;
+color:#111827;
+}
+
+.calendar-days-header,
+.calendar-days{
+display:grid;
+grid-template-columns:repeat(7,1fr);
+gap:10px;
+text-align:center;
+}
+
+.day-name{
+font-weight:600;
+color:#6b7280;
+padding:10px 0;
+}
+
+.calendar-day{
+padding:14px;
+background:#f3f4f6;
+border-radius:10px;
+cursor:pointer;
+transition:.3s;
+}
+
+.calendar-day:hover{
+background:#2563eb;
+color:white;
+}
+
+.calendar-day.active{
+background:#2563eb;
+color:white;
+font-weight:bold;
+}
+
+/* ==========================
+   EVENT FORM
+========================== */
+
+.event-form{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.form-group{
+display:flex;
+flex-direction:column;
+}
+
+.form-group label{
+margin-bottom:8px;
+font-weight:600;
+}
+
+.form-group input{
+padding:12px;
+border:1px solid #d1d5db;
+border-radius:10px;
+outline:none;
+font-size:15px;
+}
+
+.modal-buttons{
+display:flex;
+justify-content:flex-end;
+gap:12px;
+margin-top:10px;
+}
+
+.save-btn{
+background:#2563eb;
+color:white;
+border:none;
+padding:12px 18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.cancel-btn{
+background:#e5e7eb;
+border:none;
+padding:12px 18px;
+border-radius:8px;
+cursor:pointer;
+}
+
+.save-btn:hover{
+background:#1d4ed8;
+}
+
+.cancel-btn:hover{
+background:#d1d5db;
+}
+
+body.dark .calendar-widget h2{
+color:white;
+}
+
+body.dark .day-name{
+color:#d1d5db;
+}
+
+body.dark .calendar-day{
+background:#374151;
+color:white;
+}
+
+body.dark .form-group label{
+color:white;
+}
+
+body.dark .form-group input{
+background:#374151;
+border-color:#4b5563;
+color:white;
+}
+
+@media(max-width:480px){
+
+.calendar-days-header,
+.calendar-days{
+gap:5px;
+}
+
+.calendar-day{
+padding:10px;
+font-size:14px;
+}
+
+.modal-buttons{
+flex-direction:column;
+}
+
+.modal-buttons button{
+width:100%;
+}
+
+}

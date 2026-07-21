@@ -1,0 +1,87 @@
+/* ==========================
+   BREADCRUMB
+========================== */
+
+.breadcrumb{
+display:flex;
+align-items:center;
+flex-wrap:wrap;
+gap:8px;
+margin-bottom:20px;
+font-size:15px;
+}
+
+/* ==========================
+   LINKS
+========================== */
+
+.breadcrumb a{
+text-decoration:none;
+color:#2563eb;
+font-weight:500;
+transition:.3s;
+}
+
+.breadcrumb a:hover{
+color:#1d4ed8;
+text-decoration:underline;
+}
+
+/* ==========================
+   SEPARATOR
+========================== */
+
+.separator{
+color:#9ca3af;
+margin:0 4px;
+}
+
+/* ==========================
+   CURRENT PAGE
+========================== */
+
+.current{
+color:#111827;
+font-weight:600;
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark .breadcrumb a{
+color:#60a5fa;
+}
+
+body.dark .breadcrumb a:hover{
+color:#93c5fd;
+}
+
+body.dark .separator{
+color:#9ca3af;
+}
+
+body.dark .current{
+color:#ffffff;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.breadcrumb{
+font-size:14px;
+}
+
+}
+
+@media(max-width:480px){
+
+.breadcrumb{
+font-size:13px;
+gap:5px;
+}
+
+}

@@ -1,0 +1,139 @@
+/* =========================================
+   CHART CONTAINER
+========================================= */
+.chart-header{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin-bottom:20px;
+}
+
+.chart-header h2{
+font-size:22px;
+margin:0;
+color:#111827;
+}
+
+.chart-header p{
+margin-top:5px;
+color:#6b7280;
+font-size:14px;
+}
+
+.kpi-chart,
+.visitors-chart,
+.sales-overview{
+background:white;
+border-radius:18px;
+padding:22px;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+height:100%;
+}
+
+body.dark .kpi-chart,
+body.dark .visitors-chart,
+body.dark .sales-overview{
+background:#1f2937;
+}
+
+body.dark .chart-header h2{
+color:white;
+}
+
+body.dark .chart-header p{
+color:#d1d5db;
+}
+.chart-container {
+  width: 100%;
+  height: 320px;
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* =========================================
+   CHART TITLE
+========================================= */
+
+.chart-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+/* =========================================
+   RECHARTS TOOLTIP
+========================================= */
+
+.recharts-default-tooltip {
+  border-radius: 10px !important;
+  border: none !important;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* =========================================
+   LEGEND
+========================================= */
+
+.recharts-legend-wrapper {
+  font-size: 14px;
+}
+
+/* =========================================
+   DARK MODE
+========================================= */
+
+body.dark .chart-container {
+  background: #1f2937;
+}
+
+body.dark .chart-title {
+  color: #ffffff;
+}
+
+body.dark .recharts-cartesian-axis-tick-value {
+  fill: #d1d5db;
+}
+
+body.dark .recharts-legend-item-text {
+  color: #ffffff !important;
+}
+
+body.dark .recharts-tooltip-wrapper {
+  color: #111827;
+}
+
+/* =========================================
+   RESPONSIVE
+========================================= */
+
+@media (max-width: 992px) {
+  .chart-container {
+    height: 300px;
+    padding: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .chart-container {
+    height: 280px;
+    padding: 14px;
+  }
+
+  .chart-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .chart-container {
+    height: 250px;
+    padding: 12px;
+  }
+
+  .chart-title {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,175 @@
+/* ==========================
+   ERROR PAGE
+========================== */
+
+.error-page{
+min-height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f4f7fc;
+padding:20px;
+}
+
+/* ==========================
+   CARD
+========================== */
+
+.error-card{
+background:#ffffff;
+padding:45px;
+border-radius:20px;
+max-width:550px;
+width:100%;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+animation:fadeIn .5s ease;
+}
+
+.error-card h1{
+font-size:90px;
+margin:0;
+color:#f59e0b;
+}
+
+.error-card h2{
+margin:20px 0 15px;
+font-size:32px;
+color:#111827;
+}
+
+.error-card p{
+color:#6b7280;
+line-height:1.7;
+margin-bottom:30px;
+font-size:16px;
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.error-buttons{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.retry-btn,
+.home-btn{
+padding:13px 24px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+font-weight:600;
+text-decoration:none;
+transition:.3s;
+}
+
+.retry-btn{
+background:#f59e0b;
+color:white;
+}
+
+.retry-btn:hover{
+background:#d97706;
+}
+
+.home-btn{
+background:#2563eb;
+color:white;
+}
+
+.home-btn:hover{
+background:#1d4ed8;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeIn{
+
+from{
+opacity:0;
+transform:translateY(20px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark .error-page{
+background:#111827;
+}
+
+body.dark .error-card{
+background:#1f2937;
+}
+
+body.dark .error-card h2{
+color:white;
+}
+
+body.dark .error-card p{
+color:#d1d5db;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.error-card{
+padding:35px 25px;
+}
+
+.error-card h1{
+font-size:70px;
+}
+
+.error-card h2{
+font-size:26px;
+}
+
+}
+
+@media(max-width:480px){
+
+.error-card{
+padding:25px 18px;
+}
+
+.error-card h1{
+font-size:60px;
+}
+
+.error-card h2{
+font-size:22px;
+}
+
+.error-card p{
+font-size:14px;
+}
+
+.error-buttons{
+flex-direction:column;
+}
+
+.retry-btn,
+.home-btn{
+width:100%;
+text-align:center;
+}
+
+}

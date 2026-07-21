@@ -1,0 +1,124 @@
+/* ==========================
+   LOADING SCREEN
+========================== */
+
+.loading-screen{
+width:100%;
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:#f4f7fc;
+}
+
+/* ==========================
+   CONTAINER
+========================== */
+
+.loading-container{
+display:flex;
+flex-direction:column;
+align-items:center;
+text-align:center;
+}
+
+/* ==========================
+   SPINNER
+========================== */
+
+.loader{
+width:70px;
+height:70px;
+border:6px solid #dbeafe;
+border-top:6px solid #2563eb;
+border-radius:50%;
+animation:spin 1s linear infinite;
+margin-bottom:25px;
+}
+
+/* ==========================
+   TEXT
+========================== */
+
+.loading-container h2{
+margin:0;
+font-size:28px;
+color:#111827;
+}
+
+.loading-container p{
+margin-top:12px;
+font-size:16px;
+color:#6b7280;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes spin{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark .loading-screen{
+background:#111827;
+}
+
+body.dark .loading-container h2{
+color:#ffffff;
+}
+
+body.dark .loading-container p{
+color:#d1d5db;
+}
+
+body.dark .loader{
+border:6px solid #374151;
+border-top:6px solid #3b82f6;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.loader{
+width:60px;
+height:60px;
+}
+
+.loading-container h2{
+font-size:24px;
+}
+
+}
+
+@media(max-width:480px){
+
+.loader{
+width:50px;
+height:50px;
+}
+
+.loading-container h2{
+font-size:20px;
+}
+
+.loading-container p{
+font-size:14px;
+}
+
+}

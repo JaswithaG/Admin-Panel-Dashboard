@@ -1,0 +1,221 @@
+/* ==========================================
+   PROFILE PAGE
+========================================== */
+
+.profile-page {
+  padding: 30px;
+  min-height: 100vh;
+  background: #f4f7fc;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-header h1 {
+  margin: 0;
+  font-size: 34px;
+  color: #111827;
+  font-weight: 700;
+}
+
+.profile-header p {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.edit-profile-btn {
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 12px 24px;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+.edit-profile-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.profile-content {
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 25px;
+  align-items: start;
+}
+
+/* ==========================================
+   RIGHT SIDE
+========================================== */
+
+.profile-right {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.profile-section {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 28px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.profile-section h2 {
+  margin: 0 0 20px;
+  color: #111827;
+  font-size: 28px;
+  font-weight: 700;
+}
+
+.profile-section p {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.8;
+}
+
+/* ==========================================
+   INFO GRID
+========================================== */
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.info-card {
+  background: #f8fafc;
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.info-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 18px rgba(0,0,0,.08);
+}
+
+.info-card h4 {
+  margin: 0;
+  color: #111827;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.info-card p {
+  margin-top: 10px;
+  color: #6b7280;
+  font-size: 15px;
+}
+
+.full-width {
+  grid-column: span 2;
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+body.dark .profile-page {
+  background: #111827;
+}
+
+body.dark .profile-section {
+  background: #1f2937;
+}
+
+body.dark .profile-header h1,
+body.dark .profile-section h2,
+body.dark .info-card h4 {
+  color: white;
+}
+
+body.dark .profile-header p,
+body.dark .profile-section p,
+body.dark .info-card p {
+  color: #d1d5db;
+}
+
+body.dark .info-card {
+  background: #374151;
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1200px) {
+
+  .profile-content {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width:768px) {
+
+  .profile-page {
+    padding: 20px;
+  }
+
+  .profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .profile-header h1 {
+    font-size: 28px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .full-width {
+    grid-column: span 1;
+  }
+
+}
+
+@media (max-width:480px) {
+
+  .profile-page {
+    padding: 15px;
+  }
+
+  .profile-section {
+    padding: 20px;
+  }
+
+  .profile-header h1 {
+    font-size: 24px;
+  }
+
+  .edit-profile-btn {
+    width: 100%;
+  }
+
+}

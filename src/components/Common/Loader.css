@@ -1,0 +1,89 @@
+/* ==========================
+   LOADER
+========================== */
+
+.loader-container{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+
+padding:50px 20px;
+}
+
+.loader-spinner{
+
+width:60px;
+height:60px;
+
+border:6px solid #e5e7eb;
+border-top:6px solid #2563eb;
+
+border-radius:50%;
+
+animation:spin 1s linear infinite;
+}
+
+.loader-container p{
+
+margin-top:20px;
+
+font-size:16px;
+font-weight:600;
+
+color:#6b7280;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes spin{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark .loader-spinner{
+
+border:6px solid #374151;
+border-top:6px solid #3b82f6;
+
+}
+
+body.dark .loader-container p{
+
+color:#d1d5db;
+
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.loader-spinner{
+
+width:50px;
+height:50px;
+
+}
+
+.loader-container p{
+
+font-size:15px;
+
+}
+
+}

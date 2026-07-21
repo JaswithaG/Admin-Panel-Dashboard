@@ -1,0 +1,57 @@
+.notifications-page{
+padding:25px;
+}
+
+.notifications-page h1{
+margin-bottom:25px;
+color:#111827;
+}
+
+.notification-list{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.notification-card{
+background:white;
+padding:20px;
+border-radius:14px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.notification-card:hover{
+transform:translateY(-3px);
+}
+
+.notification-card h3{
+margin:0;
+}
+
+.notification-card p{
+margin-top:6px;
+color:#6b7280;
+}
+
+.status-dot{
+width:12px;
+height:12px;
+background:#16a34a;
+border-radius:50%;
+}
+
+body.dark .notification-card{
+background:#1f2937;
+}
+
+body.dark .notification-card h3{
+color:white;
+}
+
+body.dark .notification-card p{
+color:#d1d5db;
+}

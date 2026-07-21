@@ -1,0 +1,39 @@
+.revenue-card{
+background:white;
+padding:25px;
+border-radius:18px;
+box-shadow:0 8px 24px rgba(0,0,0,.08);
+}
+
+.revenue-card h3{
+margin-bottom:20px;
+font-size:20px;
+}
+
+.revenue-amount{
+font-size:38px;
+font-weight:bold;
+color:#2563eb;
+}
+
+.revenue-growth{
+margin-top:10px;
+font-weight:600;
+color:#16a34a;
+}
+
+body.dark .revenue-card{
+background:#1f2937;
+}
+
+body.dark .revenue-card h3{
+color:white;
+}
+
+@media(max-width:768px){
+
+.revenue-amount{
+font-size:30px;
+}
+
+}

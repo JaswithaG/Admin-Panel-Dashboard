@@ -1,0 +1,205 @@
+/* ==========================
+   MODAL OVERLAY
+========================== */
+
+.modal-overlay{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.5);
+display:flex;
+justify-content:center;
+align-items:center;
+z-index:1000;
+padding:20px;
+}
+
+/* ==========================
+   MODAL
+========================== */
+
+.event-modal{
+background:#ffffff;
+width:100%;
+max-width:500px;
+border-radius:16px;
+padding:25px;
+box-shadow:0 10px 30px rgba(0,0,0,.2);
+animation:fadeIn .3s ease;
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.event-modal h2{
+margin:0 0 20px;
+font-size:24px;
+color:#111827;
+text-align:center;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+.event-form{
+display:flex;
+flex-direction:column;
+gap:16px;
+}
+
+.event-form label{
+font-size:15px;
+font-weight:600;
+color:#374151;
+}
+
+.event-form input,
+.event-form textarea{
+width:100%;
+padding:12px;
+border:1px solid #d1d5db;
+border-radius:10px;
+font-size:15px;
+outline:none;
+transition:.3s;
+}
+
+.event-form textarea{
+resize:vertical;
+min-height:100px;
+}
+
+.event-form input:focus,
+.event-form textarea:focus{
+border-color:#2563eb;
+box-shadow:0 0 0 3px rgba(37,99,235,.15);
+}
+
+/* ==========================
+   BUTTONS
+========================== */
+
+.modal-actions{
+display:flex;
+justify-content:flex-end;
+gap:12px;
+margin-top:20px;
+}
+
+.cancel-btn,
+.save-btn{
+padding:12px 22px;
+border:none;
+border-radius:10px;
+cursor:pointer;
+font-size:15px;
+font-weight:600;
+transition:.3s;
+}
+
+.cancel-btn{
+background:#e5e7eb;
+color:#374151;
+}
+
+.cancel-btn:hover{
+background:#d1d5db;
+}
+
+.save-btn{
+background:#2563eb;
+color:white;
+}
+
+.save-btn:hover{
+background:#1d4ed8;
+}
+
+/* ==========================
+   ANIMATION
+========================== */
+
+@keyframes fadeIn{
+from{
+opacity:0;
+transform:translateY(-15px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark .event-modal{
+background:#1f2937;
+}
+
+body.dark .event-modal h2{
+color:#ffffff;
+}
+
+body.dark .event-form label{
+color:#d1d5db;
+}
+
+body.dark .event-form input,
+body.dark .event-form textarea{
+background:#374151;
+color:#ffffff;
+border-color:#4b5563;
+}
+
+body.dark .cancel-btn{
+background:#4b5563;
+color:#ffffff;
+}
+
+body.dark .cancel-btn:hover{
+background:#6b7280;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media(max-width:768px){
+
+.event-modal{
+padding:20px;
+}
+
+.modal-actions{
+flex-direction:column;
+}
+
+.cancel-btn,
+.save-btn{
+width:100%;
+}
+
+}
+
+@media(max-width:480px){
+
+.event-modal{
+padding:18px;
+}
+
+.event-modal h2{
+font-size:20px;
+}
+
+.event-form input,
+.event-form textarea{
+font-size:14px;
+}
+
+}

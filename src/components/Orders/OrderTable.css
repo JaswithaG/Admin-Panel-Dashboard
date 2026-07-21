@@ -1,0 +1,118 @@
+/* ==========================
+   ORDER TABLE
+========================== */
+
+.order-table-container{
+    width:100%;
+    overflow-x:auto;
+    background:#ffffff;
+    border-radius:16px;
+    padding:20px;
+    box-shadow:0 8px 18px rgba(0,0,0,.06);
+}
+
+.order-table{
+    width:100%;
+    min-width:900px;
+    border-collapse:collapse;
+}
+
+.order-table th{
+    background:#f3f4f6;
+    color:#374151;
+    padding:14px;
+    text-align:left;
+}
+
+.order-table td{
+    padding:14px;
+    border-bottom:1px solid #e5e7eb;
+}
+
+.order-table tbody tr:hover{
+    background:#f9fafb;
+}
+
+.order-actions{
+    display:flex;
+    gap:10px;
+}
+
+.order-actions button{
+    border:none;
+    padding:8px 12px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.view-btn{
+    background:#2563eb;
+    color:white;
+}
+
+.delete-btn{
+    background:#ef4444;
+    color:white;
+}
+
+/* Status */
+
+.status{
+    padding:6px 12px;
+    border-radius:20px;
+    font-size:13px;
+    font-weight:600;
+}
+
+.status.pending{
+    background:#fef3c7;
+    color:#b45309;
+}
+
+.status.completed{
+    background:#dcfce7;
+    color:#15803d;
+}
+
+.status.cancelled{
+    background:#fee2e2;
+    color:#b91c1c;
+}
+
+/* Dark */
+
+body.dark .order-table-container{
+    background:#1f2937;
+}
+
+body.dark .order-table th{
+    background:#374151;
+    color:white;
+}
+
+body.dark .order-table td{
+    color:white;
+    border-color:#374151;
+}
+
+body.dark .order-table tbody tr:hover{
+    background:#374151;
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.order-table-container{
+padding:15px;
+}
+
+.order-actions{
+flex-direction:column;
+}
+
+.order-actions button{
+width:100%;
+}
+
+}

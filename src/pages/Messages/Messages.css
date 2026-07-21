@@ -1,0 +1,62 @@
+.messages-page{
+padding:25px;
+}
+
+.messages-page h1{
+margin-bottom:25px;
+}
+
+.message-list{
+display:flex;
+flex-direction:column;
+gap:18px;
+}
+
+.message-card{
+background:white;
+padding:18px;
+border-radius:14px;
+display:flex;
+align-items:center;
+gap:18px;
+box-shadow:0 8px 18px rgba(0,0,0,.08);
+transition:.3s;
+}
+
+.message-card:hover{
+transform:translateY(-3px);
+}
+
+.avatar-circle{
+width:55px;
+height:55px;
+background:#2563eb;
+color:white;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:22px;
+font-weight:bold;
+}
+
+.message-content h3{
+margin:0;
+}
+
+.message-content p{
+margin-top:6px;
+color:#6b7280;
+}
+
+body.dark .message-card{
+background:#1f2937;
+}
+
+body.dark .message-content h3{
+color:white;
+}
+
+body.dark .message-content p{
+color:#d1d5db;
+}

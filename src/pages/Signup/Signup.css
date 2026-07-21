@@ -1,0 +1,159 @@
+/* ==========================
+   SIGNUP PAGE
+========================== */
+
+.signup-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f7fc;
+  padding: 20px;
+}
+
+/* ==========================
+   SIGNUP CARD
+========================== */
+
+.signup-card {
+  width: 100%;
+  max-width: 480px;
+  background: #ffffff;
+  padding: 35px;
+  border-radius: 18px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.signup-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #111827;
+  font-size: 28px;
+}
+
+/* ==========================
+   FORM
+========================== */
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.signup-form input {
+  width: 100%;
+  padding: 13px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 10px;
+  font-size: 15px;
+  outline: none;
+  transition: 0.3s;
+}
+
+.signup-form input:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.15);
+}
+
+/* ==========================
+   BUTTON
+========================== */
+
+.signup-btn {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 13px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+.signup-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ==========================
+   FOOTER
+========================== */
+
+.signup-footer {
+  margin-top: 20px;
+  text-align: center;
+  font-size: 15px;
+  color: #6b7280;
+}
+
+.signup-footer a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark .signup-page {
+  background: #111827;
+}
+
+body.dark .signup-card {
+  background: #1f2937;
+}
+
+body.dark .signup-card h2 {
+  color: white;
+}
+
+body.dark .signup-form input {
+  background: #374151;
+  border-color: #4b5563;
+  color: white;
+}
+
+body.dark .signup-footer {
+  color: #d1d5db;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px) {
+  .signup-card {
+    padding: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-card {
+    padding: 22px;
+  }
+
+  .signup-card h2 {
+    font-size: 24px;
+  }
+
+  .signup-btn {
+    width: 100%;
+  }
+}
+.error{
+    color:#ef4444;
+    text-align:center;
+    margin-bottom:15px;
+    font-size:14px;
+}
+
+.signup-card p{
+    text-align:center;
+    color:#6b7280;
+    margin-bottom:20px;
+}

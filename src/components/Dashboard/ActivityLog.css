@@ -1,0 +1,194 @@
+/* ==========================
+   ACTIVITY LOG
+========================== */
+
+.activity-log {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.06);
+  transition: 0.3s;
+}
+
+.activity-log:hover {
+  transform: translateY(-3px);
+}
+
+/* ==========================
+   HEADER
+========================== */
+
+.activity-log-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.activity-log-header h3 {
+  margin: 0;
+  font-size: 20px;
+  color: #111827;
+}
+
+.view-all-btn {
+  background: #2563eb;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.view-all-btn:hover {
+  background: #1d4ed8;
+}
+
+/* ==========================
+   ACTIVITY LIST
+========================== */
+
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* ==========================
+   ITEM
+========================== */
+
+.activity-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+/* ==========================
+   ICON
+========================== */
+
+.activity-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: #2563eb;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* ==========================
+   CONTENT
+========================== */
+
+.activity-content {
+  flex: 1;
+}
+
+.activity-content h4 {
+  margin: 0;
+  font-size: 16px;
+  color: #111827;
+}
+
+.activity-content p {
+  margin: 6px 0;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.activity-time {
+  font-size: 13px;
+  color: #9ca3af;
+}
+
+/* ==========================
+   DARK MODE
+========================== */
+
+body.dark .activity-log {
+  background: #1f2937;
+}
+
+body.dark .activity-log-header h3,
+body.dark .activity-content h4 {
+  color: #ffffff;
+}
+
+body.dark .activity-content p {
+  color: #d1d5db;
+}
+
+body.dark .activity-time {
+  color: #9ca3af;
+}
+
+body.dark .activity-item {
+  border-color: #374151;
+}
+
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 992px) {
+
+  .activity-log {
+    padding: 18px;
+  }
+
+}
+
+@media (max-width: 768px) {
+
+  .activity-log-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .activity-item {
+    gap: 12px;
+  }
+
+  .activity-icon {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+}
+
+@media (max-width: 480px) {
+
+  .activity-log {
+    padding: 15px;
+  }
+
+  .activity-content h4 {
+    font-size: 15px;
+  }
+
+  .activity-content p {
+    font-size: 13px;
+  }
+
+  .view-all-btn {
+    width: 100%;
+  }
+
+}
