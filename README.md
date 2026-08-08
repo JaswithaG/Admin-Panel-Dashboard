@@ -316,12 +316,6 @@ Mother Theresa Institute of Engineering and Technology
 
 ---
 
-# 📄 License
-
-This project is developed for educational and learning purposes.
-
----
-
 # ⭐ Acknowledgements
 
 - React.js
